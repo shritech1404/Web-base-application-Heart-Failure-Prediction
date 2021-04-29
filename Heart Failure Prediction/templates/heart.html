@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Heart Failure Prediction</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Shri Tech1404</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="https://github.com/shritech1404?tab=repositories">Github</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+        <center>
+      <h1 class="header center orange-text">HEART FAILURE PREDICTION</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Let's Check Your Heart...!!
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/after' method="POST" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="age"><b>Age</b></label>
+            <br>
+          <input placeholder="Age" name="a" id="age" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="Anaemia"><b>Anaemia </b></label>
+            <br>
+          <input id="Anaemia" name="b" placeholder="Anaemia"  type="text" class="validate">
+
+        </div>
+         <div class="input-field col s4">
+
+          <label for="Creatinine_phosphokinase"><b>Creatinine_phosphokinase </b></label>
+            <br>
+          <input id="Creatinine_phosphokinase" name="c" placeholder="Creatinine_phosphokinase"  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Diabeties"><b>Diabeties</b></label>
+            <br>
+          <input id="Diabeties" name="d" placeholder="Diabeties" type="text" class="validate">
+
+        </div>
+
+          <div class="input-field col s4">
+            <label for="Enjection_fraction"><b>Enjection_fraction</b></label>
+            <br>
+          <input id="Enjection_fraction" name="e" placeholder="Enjection_fraction" type="text" class="validate">
+
+        </div>
+
+
+
+          <div class="input-field col s4">
+
+          <label for="HBP"><b>HBP </b></label>
+            <br>
+          <input id="HBP" name="f" placeholder="HBP"  type="text" class="validate">
+
+        </div>
+         <div class="input-field col s4">
+
+          <label for="Platlets"><b>Platlets </b></label>
+            <br>
+          <input id="Platlets" name="g" placeholder="Platlets"  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="Serum_creatinine"><b>Serum_creatinine</b></label>
+            <br>
+          <input id="Serum_creatinine" name="h" placeholder="Serum_creatinine" type="text" class="validate">
+
+        </div>
+
+          <div class="input-field col s4">
+            <label for="Serum_sodium"><b>Serum_sodium</b></label>
+            <br>
+          <input id="Serum_sodium" name="i" placeholder="Serum_sodium" type="text" class="validate">
+
+        </div>
+          <div class="input-field col s4">
+            <label for="Sex"><b>Sex</b></label>
+            <br>
+          <input id="Sex" name="j" placeholder="Sex" type="text" class="validate">
+
+        </div>
+          <div class="input-field col s4">
+            <label for="Smoking"><b>Smoking</b></label>
+            <br>
+          <input id="Smoking" name="k" placeholder="Smoking" type="text" class="validate">
+
+        </div>
+          <div class="input-field col s4">
+            <label for="Time"><b>Time</b></label>
+            <br>
+          <input id="Time" name="l" placeholder="Time" type="text" class="validate">
+
+        </div>
+
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Result</button>
+      </div>
+    </center>
+    </form>
+      </div>
+
+      <br>
+        {{pred}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Team Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Names</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Shrikant Shejwal</a></li>
+            <li><a class="white-text" href="#!">Sanket Yewale</a></li>
+            <li><a class="white-text" href="#!">Saurabh Kadam</a></li>
+            <li><a class="white-text" href="#!">Kunal Jirage</a></li>
+            <li><a class="white-text" href="#!">Shivanjali Jadhav</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Contact</h5>
+          <ul>
+            <li><a class="white-text" href="#!">shrikantshejwal12345@gmail.com</a></li>
+            <li><a class="white-text" href="#!">sanketyewale98@gmail.com</a></li>
+            <li><a class="white-text" href="#!">saurabhkadam1412@gmail.com</a></li>
+            <li><a class="white-text" href="#!">kunalsjirage@gmail.com</a></li>
+            <li><a class="white-text" href="#!">shivanjalijadhav1282000@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Shrikant, Sanket, Saurabh, Kunal, Shivanjali</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
